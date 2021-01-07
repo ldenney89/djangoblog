@@ -1,5 +1,5 @@
 from django.forms import ModelForm
-from blogging.models import Post
+from blogging.models import Post, Category
 
 
 class MyPostForm(ModelForm):
@@ -11,5 +11,14 @@ class MyPostForm(ModelForm):
             'author',
             # 'created_date',
             # 'modifed_date',
-            #'published_date',
+            # 'published_date',
+        ]
+
+
+class MyCategoryForm(ModelForm):
+    class Meta:
+        model = Category
+        fields = [
+            'name',
+            'description',
         ]

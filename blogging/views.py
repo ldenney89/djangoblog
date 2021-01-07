@@ -47,7 +47,7 @@ def detail_view(request, post_id):
     return render(request, 'blogging/detail.html', context)
 
 
-def add_model(request):
+def add_post(request):
     if request.method == "POST":
         form = MyPostForm(request.POST)
         if form.is_valid():
