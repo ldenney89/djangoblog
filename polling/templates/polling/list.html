@@ -2,12 +2,15 @@
 
 {% extends "base.html" %}
 {% block content %}
+<a class="backlink" href="/">Home</a>
 <h1>Polls</h1>
 {% for poll in polls %}
     <div class="poll">
         <h2>
             <a href="{% url 'poll_detail' poll.pk %}">{{ poll.title }}</a>
         </h2>
+        <div class="poll-score"> Current score: {{ poll.score }}
+        </div>
     </div>
 {% endfor %}
 {% endblock %}

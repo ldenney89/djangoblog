@@ -5,7 +5,7 @@ from django import forms
 from django.utils import timezone
 
 from blogging.models import Post
-from blogging.forms import MyPostForm
+from blogging.forms import MyPostForm, MyCategoryForm
 
 
 def stub_view(request, *args, **kwargs):
@@ -57,4 +57,17 @@ def add_post(request):
             return redirect('/')
     else:
         form = MyPostForm()
+        return render(request, "blogging/my_template.html", {'form': form})
+
+
+def add_category(request):
+    if request.method == "POST":
+        form = MyCategoryForm(request.POST)
+        if form.is_valid():
+            model_instance = form.save(commit=False)
+            model_instance.timestamp = timezone.now()
+            model_instance.save()
+            return redirect('/')
+    else:
+        form = MyCategoryForm()
         return render(request, "blogging/my_template.html", {'form': form})
