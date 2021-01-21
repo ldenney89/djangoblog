@@ -1,0 +1,9 @@
+Ubuntu-
+IP Address or FQDN - python230-ubuntu99002001.westus.cloudapp.azure.com
+
+
+PostgresSQL-
+IP Address or FQDN - postgresql99004.westus.cloudapp.azure.com
+
+databaseURL:
+postgres://postgres:8dB8t!c7bFHFnThYw@<db DNS>:5432/djangoblog

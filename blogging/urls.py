@@ -1,7 +1,6 @@
 from django.urls import path
 from blogging.views import list_view, detail_view, add_post, add_category
 from blogging.feeds import PostFeed
-from django.http import HttpResponse, HttpResponseRedirect, Http404
 
 
 urlpatterns = [

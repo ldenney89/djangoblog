@@ -3,7 +3,6 @@ from django.shortcuts import render, redirect
 from django.template import loader
 from django import forms
 from django.utils import timezone
-
 from blogging.models import Post
 from blogging.forms import MyPostForm, MyCategoryForm
 
