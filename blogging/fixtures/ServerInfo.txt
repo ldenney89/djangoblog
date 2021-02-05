@@ -4,7 +4,7 @@ py230admin
 Ubuntu Server Password
 vdNgp6t#XmRhMRv6n
 
-Ubuntu Server DNS String
+MY Server DNS String
 python230-ubuntu99002001.westus.cloudapp.azure.com
 
 Ubuntu Server SSH Port
@@ -29,4 +29,4 @@ New Secret Key
 mea59mjtkmFKQwfWwpQAjWt83kDyKKMVrsvJaku62dUV2X85zR 
 
 Database URL
-postgres://postgres:8dB8t!c7bFHFnThYw@<postgresql99004.westus.cloudapp.azure.com>:5432/djangoblog
+postgres://postgres:8dB8t!c7bFHFnThYw@postgresql99004.westus.cloudapp.azure.com:5432/djangoblog
