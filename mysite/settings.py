@@ -136,8 +136,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
-
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = '/'
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
 
-django_heroku.settings(local())
+django_heroku.settings(locals())
